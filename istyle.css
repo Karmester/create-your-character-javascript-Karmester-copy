@@ -41,6 +41,11 @@ input {
 	box-shadow: 2px 4px 3px #292d53 inset;
 }
 
+input:hover {
+	box-shadow: 2px 4px 3px #292d53;
+	border-radius: 10px;
+}
+
 select:focus {
 	background-color: #292d53;
 	color: #5376f2;
@@ -58,6 +63,10 @@ select {
 	margin: 5px;
 	padding: 5px;
 	border-radius: 5px;
+	box-shadow: 2px 4px 3px #292d53;
+}
+select:hover {
+	border-radius: 10px;
 	box-shadow: 2px 4px 3px #292d53 inset;
 }
 
