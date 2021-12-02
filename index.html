@@ -4,11 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap"
+			rel="stylesheet"
+		/>
+
 		<title>Document</title>
 		<script src="iscript.js" defer></script>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="istyle.css" />
 	</head>
 	<body>
+		<h1>Create Your Character!</h1>
 		<form action="results.html" method="GET">
 			<div>
 				<label for="name">Name</label>
@@ -24,16 +33,19 @@
 			<div>
 				<label for="gender">Gender</label>
 				<select name="gender" id="gender" onchange="changeGenderImage()">
+					<option value="Default">Choose your sex!</option>
 					<option value="Male">Male</option>
 					<option value="Female">Female</option>
 					<option value="Intersex">Intersex</option>
+					<option value="Genderless">Genderless</option>
 				</select>
 				<!-- 	<p id="valuesGender"></p> -->
-				<img alt="Logo-gender" id="selectGenderImg" hidden />
+				<img src="data:," alt id="selectGenderImg" hidden />
 			</div>
 			<div>
 				<label for="race">Race</label>
 				<select name="race" id="race" onchange="changeRaceImage()">
+					<option value="DefaultRace">Choose your race!</option>
 					<option value="Halfling">Halfling</option>
 					<option value="Human">Human</option>
 					<option value="Dwarf">Dwarf</option>
@@ -45,11 +57,12 @@
 					<option value="Half-Elf">Half-Elf</option>
 				</select>
 				<!-- <p id="valuesRace"></p> -->
-				<img alt="Logo-race" id="selectRaceImg" hidden />
+				<img src="data:," alt id="selectRaceImg" hidden />
 			</div>
 			<div>
 				<label for="class">Class</label>
 				<select name="class" id="class" onchange="changeClassImage()">
+					<option value="DefaultClass">Choose your class!</option>
 					<option value="Paladin">Paladin</option>
 					<option value="Barbaric">Barbaric</option>
 					<option value="Bard">Bard</option>
@@ -64,11 +77,11 @@
 					<option value="Monk">Monk</option>
 				</select>
 				<!-- 	<p id="values"></p> -->
-				<img alt="Logo-race" id="selectClassImg" hidden />
+				<img src="data:," alt id="selectClassImg" hidden />
 			</div>
 			<div>
 				<button type="submit">Create</button>
-				<button type="reset">Reset</button>
+				<button type="reset" id="reset" onclick="buttonReset()">Reset</button>
 			</div>
 		</form>
 	</body>

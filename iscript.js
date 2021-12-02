@@ -44,14 +44,14 @@ select.addEventListener("change", function () {
 
 function changeRaceImage() {
 	var imgValue = document.getElementById("race").value;
-	document.getElementById("selectRaceImg").src = "imgRace/" + imgValue + ".png";
+	document.getElementById("selectRaceImg").src = "imgRace/" + imgValue + ".jpg";
 	document.getElementById("selectRaceImg").style.display = "block";
 }
 
 function changeClassImage() {
 	var imgValue = document.getElementById("class").value;
 	document.getElementById("selectClassImg").src =
-		"imgClass/" + imgValue + ".png";
+		"imgClass/" + imgValue + ".jpg";
 	document.getElementById("selectClassImg").style.display = "block";
 }
 
@@ -60,4 +60,11 @@ function changeGenderImage() {
 	document.getElementById("selectGenderImg").src =
 		"imgGender/" + imgValue + ".png";
 	document.getElementById("selectGenderImg").style.display = "block";
+}
+
+function buttonReset() {
+	document.getElementById("selectGenderImg").style.display = "none";
+	document.getElementById("selectClassImg").style.display = "none";
+	document.getElementById("selectRaceImg").style.display = "none";
+	document.getElementById("values").style.display = "none";
 }
