@@ -34,8 +34,11 @@ input {
 	width: 100px;
 	transition: ease-in-out, width 0.35s ease-in-out;
 	background-color: #351f42;
-	height: 25px;
+	height: 30px;
 	margin: 5px;
+
+	border-radius: 5px;
+	box-shadow: 2px 4px 3px #292d53 inset;
 }
 
 select:focus {
@@ -51,8 +54,11 @@ select {
 	transition: ease-in-out, width 0.35s ease-in-out;
 	background-color: #351f42;
 	text-align: center;
-	height: 25px;
+	height: 30px;
 	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 4px 3px #292d53 inset;
 }
 
 button {
